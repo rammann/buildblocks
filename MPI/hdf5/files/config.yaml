@@ -59,6 +59,11 @@ hdf5:
           - url: https://github.com/HDFGroup/hdf5/archive/refs/tags/hdf5_${V_PKG}.tar.gz
             name: hdf5-${V_PKG}.tar.gz
       variants:
+        - systems: [merlin-.*]
+          overlay: private
+          group_deps:
+            compiler: {gcc: [14.2.0]}
+            mpi: {openmpi: [4.1.6_slurm]}
         - systems: [.*.merlin7.psi.ch]
           overlay: Alps
           relstage: unstable
