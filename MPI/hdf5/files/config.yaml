@@ -61,6 +61,7 @@ hdf5:
       variants:
         - systems: [merlin-.*]
           overlay: private
+          relstage: unstable
           group_deps:
             compiler: {gcc: [14.3.0]}
             mpi: {openmpi: [5.0.10_slurm]}
