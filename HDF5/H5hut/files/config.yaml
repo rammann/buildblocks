@@ -40,6 +40,14 @@ H5hut:
             mpi: {openmpi: [4.1.8_slurm]}
             hdf5: {hdf5: [1.14.6]}
           build_requires: []
+        - systems: [merlin-.*.psi.ch]
+          overlay: private
+          relstage: unstable
+          group_deps:
+            compiler: {gcc: [14.3.0]}
+            mpi: {openmpi: [5.0.10_slurm]}
+            hdf5: {hdf5: [1.14.6]}
+          build_requires: []
     2.0.0rc6:
       variants:
         - systems: [merlin-.*.psi.ch]
