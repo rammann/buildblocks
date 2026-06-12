@@ -41,7 +41,7 @@ H5hut:
             hdf5: {hdf5: [1.14.6]}
           build_requires: []
         - systems: [merlin-.*.psi.ch]
-          overlay: private
+          overlay: amas
           relstage: unstable
           group_deps:
             compiler: {gcc: [14.3.0]}

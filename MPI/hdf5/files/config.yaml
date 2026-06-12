@@ -60,7 +60,7 @@ hdf5:
             name: hdf5-${V_PKG}.tar.gz
       variants:
         - systems: [merlin-.*]
-          overlay: private
+          overlay: amas
           relstage: unstable
           group_deps:
             compiler: {gcc: [14.3.0]}
